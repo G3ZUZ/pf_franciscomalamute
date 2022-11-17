@@ -152,7 +152,7 @@ footer {
 
 .contacto .imagen {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.214);
-  background-image: url(/media/programación.webp);
+  background-image: url(../media/programación.webp);
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -361,7 +361,7 @@ body {
 .nosotros {
   height: 90vh; }
   .nosotros section .container {
-    background-image: url(/media/un-equipo.webp);
+    background-image: url(../media/un-equipo.webp);
     width: 100%;
     height: 70vh;
     background-size: contain;
@@ -431,7 +431,7 @@ body {
 .quienes_somos {
   width: 100vw;
   height: 90vh;
-  background-image: url(/media/somos-coderya.webp);
+  background-image: url(../media/somos-coderya.webp);
   background-size: 1200px 900px; }
   .quienes_somos .texto {
     display: flex;
