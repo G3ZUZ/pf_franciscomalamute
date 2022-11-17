@@ -25,18 +25,20 @@ body {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                
+
                 .carta {
                     height: 60vh;
                     width: 35vw;
                     display: flex;
                     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.279);
-                    h3{
+
+                    h3 {
                         color: blueviolet;
                         font-size: 2em;
                         margin-top: 50px;
-                    }             
-                    p{
+                    }
+
+                    p {
                         // font-size: 1.5em;
                         text-align: center;
                         // display: flex;
@@ -45,7 +47,7 @@ body {
                 }
 
                 .carta1 {
-                    background-image: url(/media/front-end.webp);
+                    background-image: url(../media/front-end.webp);
                     @include carta;
 
                     .boton {
@@ -56,7 +58,7 @@ body {
                 }
 
                 .carta2 {
-                    background-image: url(/media/full-stack.webp);
+                    background-image: url(../media/full-stack.webp);
                     @include carta;
 
                     .boton {
@@ -67,7 +69,7 @@ body {
                 }
 
                 .carta3 {
-                    background-image: url(/media/python.webp);
+                    background-image: url(../media/python.webp);
                     @include carta;
 
                     .boton {
@@ -96,14 +98,12 @@ body {
         font-weight: bold;
 
         .container {
-            h2{
+            h2 {
                 color: blueviolet;
             }
 
             .programas {
-                .carta{
-
-                }
+                // .carta{
             }
         }
     }
