@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .cursos {
+        background-color: rgb(47, 47, 47);
+
+        .container {
+            height: 100%;
+            width: 100%;
+            color: white;
+
+            h2 {
+                text-align: center;
+                font-size: 50px;
+                color: blueviolet;
+                margin: 30px 0px;
+            }
+
+            .programas {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                .carta {
+                    height: 60vh;
+                    width: 35vw;
+                    display: flex;
+                    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.279);
+                    h3{
+                        color: blueviolet;
+                        font-size: 2em;
+                        margin-top: 50px;
+                    }             
+                    p{
+                        // font-size: 1.5em;
+                        text-align: center;
+                        // display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .carta1 {
+                    background-image: url(/media/front-end.webp);
+                    @include carta;
+
+                    .boton {
+                        @include boton;
+                        margin-top: 100px;
+                    }
+
+                }
+
+                .carta2 {
+                    background-image: url(/media/full-stack.webp);
+                    @include carta;
+
+                    .boton {
+                        @include boton;
+                        margin-top: 100px;
+                    }
+
+                }
+
+                .carta3 {
+                    background-image: url(/media/python.webp);
+                    @include carta;
+
+                    .boton {
+                        @include boton;
+                        margin-top: 100px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    .cursos {
+        font-size: 1.5em;
+        font-weight: bold;
+
+        .container {
+            h2{
+                color: blueviolet;
+            }
+
+            .programas {
+                .carta{
+
+                }
+            }
+        }
+    }
+}

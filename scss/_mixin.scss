@@ -1,0 +1,32 @@
+@mixin carta {
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 60vh;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.351);
+}
+@mixin boton {
+    margin-top: 100px;
+    min-width: 130px;
+    height: 40px;
+    color: white;
+    padding: 30px 50px;
+    font-size: 2em;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    background: blueviolet;
+    box-shadow: 0 3px rgba(255, 255, 255, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }

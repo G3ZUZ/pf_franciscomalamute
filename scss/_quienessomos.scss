@@ -1,0 +1,58 @@
+.quienes_somos {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(/media/somos-coderya.webp);
+    background-size: 1200px 900px;
+
+    
+    .texto {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 90vh;
+        background-color: rgba(255, 255, 255, 0.395);
+        padding: 20px 0px 0px 0px;
+
+        h2 {
+            // margin-top: 50px;
+            color: blueviolet;
+            font-weight: bold;
+            text-shadow: 4px 2px 2px rgb(0, 0, 0);
+            font-size: 3em;
+            text-align: center;
+            margin: 30px 10px 140px 10px;
+            // padding: 20px 0 0 0;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            // width: 90%;
+            text-align: center;
+            margin: 10px 20px 10px 20px;
+            // align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgb(89, 19, 155);
+            border-radius: 40px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) {}

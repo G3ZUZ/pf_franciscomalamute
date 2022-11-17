@@ -1,0 +1,44 @@
+footer{
+    
+    width: 100%;
+    section{
+        display: flex;
+        height: 150px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(32, 32, 32);
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .mapa{      
+        margin-right: 20px;
+    }
+
+    .copy{
+        p{
+            text-align: center;
+            background-color: green;
+            color: $colornegro;
+        }
+    }
+}
+
+
+
+
+@media (min-width:768px){
+
+}
+
+
+
+
+
+

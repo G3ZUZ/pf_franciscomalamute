@@ -1,0 +1,97 @@
+header {
+    background-color: $colorverdeoscuro;
+    text-align: center;
+    width: 100%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+        .logo{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5em;
+            background-color: $colornegro;
+            padding: 20px 0px 20px 0px;
+            letter-spacing: 1px;
+            em{
+                margin-left: 5px;
+            }
+        }
+        
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px 15px 0px;
+        ul{
+            font-weight: bold;
+            display: flex;
+            li{
+                padding: 0px 5px ;
+
+                a{
+                    color: $colornegro;
+                    font-size: 1em;
+
+                    &:hover{
+                        background: $colorvioleta;
+                        border: 0px solid rgba(137, 43, 226, 0.295);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (min-width:768px) {
+    header {
+        background-color: $colorverdeoscuro;
+        text-align: center;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            nav {
+                ul {
+                    display: flex;
+                    li{
+                        color: $colornegro;
+                        margin: 0px 20px;
+                        &:hover{
+                            color: $colorverdeoscuro
+                        }
+                        a{
+                            padding: 5px 5px;
+                            text-decoration: none;
+                            color: $colornegro;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 992px){
+    header{
+        .container{
+            ul{
+                li{
+                    margin: 0px 30px;
+                }
+            }
+        }
+    }
+}

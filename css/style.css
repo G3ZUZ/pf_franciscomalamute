@@ -1,0 +1,459 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+  * body {
+    font-family: 'Roboto', sans-serif;
+    color: blueviolet; }
+
+header {
+  background-color: #05cc47;
+  text-align: center;
+  width: 100%; }
+  header .container {
+    display: flex;
+    flex-direction: column; }
+    header .container .logo {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.5em;
+      background-color: #000000;
+      padding: 20px 0px 20px 0px;
+      letter-spacing: 1px; }
+      header .container .logo em {
+        margin-left: 5px; }
+  header nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px; }
+    header nav ul {
+      font-weight: bold;
+      display: flex; }
+      header nav ul li {
+        padding: 0px 5px; }
+        header nav ul li a {
+          color: #000000;
+          font-size: 1em; }
+          header nav ul li a:hover {
+            background: #892be24b;
+            border: 0px solid rgba(137, 43, 226, 0.295);
+            border-radius: 5px; }
+
+@media (min-width: 768px) {
+  header {
+    background-color: #05cc47;
+    text-align: center; }
+    header .container {
+      display: flex;
+      flex-direction: column; }
+      header .container nav ul {
+        display: flex; }
+        header .container nav ul li {
+          color: #000000;
+          margin: 0px 20px; }
+          header .container nav ul li:hover {
+            color: #05cc47; }
+          header .container nav ul li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            color: #000000; } }
+
+@media (min-width: 992px) {
+  header .container ul li {
+    margin: 0px 30px; } }
+
+main {
+  height: 100%; }
+
+.inicio {
+  padding-bottom: 100px;
+  background-color: black; }
+  .inicio .portada {
+    background-image: url(/media/hero.webp);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.459); }
+    .inicio .portada .parrafo-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .inicio .portada .parrafo-card .presentacion {
+        font-size: 3em;
+        color: white;
+        transition: all 0.5s ease; }
+      .inicio .portada .parrafo-card .boton {
+        margin-top: 40px;
+        min-width: 130px;
+        height: 40px;
+        color: white;
+        padding: 15px 30px;
+        font-weight: bold;
+        transition: all 0.5s ease;
+        position: relative;
+        outline: none;
+        border-radius: 50px;
+        border: none;
+        background: blueviolet;
+        box-shadow: 0 3px rgba(255, 255, 255, 0.24); }
+
+@media (min-width: 768px) {
+  main .portada {
+    height: 65vh; }
+    main .portada .parrafo-card .boton {
+      margin-top: 100px;
+      min-width: 130px;
+      height: 40px;
+      color: white;
+      padding: 30px 50px;
+      font-size: 2em;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      position: relative;
+      outline: none;
+      border-radius: 50px;
+      border: none;
+      background: blueviolet;
+      box-shadow: 0 3px rgba(255, 255, 255, 0.24);
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .portada .parrafo-card .boton:hover {
+        background: rgba(155, 49, 255, 0.519);
+        cursor: pointer; } }
+
+footer {
+  width: 100%; }
+  footer section {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020; }
+    footer section ul {
+      display: flex;
+      flex-direction: column; }
+      footer section ul li {
+        font-size: 1.1em;
+        font-weight: bold; }
+  footer .mapa {
+    margin-right: 20px; }
+  footer .copy p {
+    text-align: center;
+    background-color: green;
+    color: #000000; }
+
+.contacto .imagen {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.214);
+  background-image: url(/media/programación.webp);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .contacto .imagen form {
+    background-color: rgba(0, 0, 0, 0.392);
+    border-radius: 25px;
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contacto .imagen form .genero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 30px;
+      color: #05cc47; }
+    .contacto .imagen form ul li {
+      display: flex;
+      flex-direction: column;
+      color: #05cc47; }
+      .contacto .imagen form ul li label {
+        font-size: 1.5em; }
+      .contacto .imagen form ul li textarea {
+        background-color: rgba(0, 0, 0, 0.093);
+        height: 100px;
+        width: 250px;
+        resize: none;
+        font-size: 1.1em;
+        color: white;
+        text-align: center; }
+        .contacto .imagen form ul li textarea::placeholder {
+          color: white; }
+    .contacto .imagen form .boton .submit {
+      margin-top: 100px;
+      min-width: 130px;
+      height: 40px;
+      color: white;
+      padding: 30px 50px;
+      font-size: 2em;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      position: relative;
+      outline: none;
+      border-radius: 50px;
+      border: none;
+      background: blueviolet;
+      box-shadow: 0 3px rgba(255, 255, 255, 0.24);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 30px;
+      display: flex;
+      margin-top: 30px; }
+
+@media (min-width: 768px) {
+  .contacto .imagen form {
+    width: 30vw;
+    margin-bottom: 100px; } }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  body .cursos {
+    background-color: #2f2f2f; }
+    body .cursos .container {
+      height: 100%;
+      width: 100%;
+      color: white; }
+      body .cursos .container h2 {
+        text-align: center;
+        font-size: 50px;
+        color: blueviolet;
+        margin: 30px 0px; }
+      body .cursos .container .programas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        body .cursos .container .programas .carta {
+          height: 60vh;
+          width: 35vw;
+          display: flex;
+          text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.279); }
+          body .cursos .container .programas .carta h3 {
+            color: blueviolet;
+            font-size: 2em;
+            margin-top: 50px; }
+          body .cursos .container .programas .carta p {
+            text-align: center;
+            align-items: center; }
+        body .cursos .container .programas .carta1 {
+          background-image: url(/media/front-end.webp);
+          background-size: cover;
+          margin: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 500px;
+          height: 60vh;
+          justify-content: space-evenly;
+          margin-bottom: 80px;
+          padding-bottom: 100px;
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.351); }
+          body .cursos .container .programas .carta1 .boton {
+            margin-top: 100px;
+            min-width: 130px;
+            height: 40px;
+            color: white;
+            padding: 30px 50px;
+            font-size: 2em;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            position: relative;
+            outline: none;
+            border-radius: 50px;
+            border: none;
+            background: blueviolet;
+            box-shadow: 0 3px rgba(255, 255, 255, 0.24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px; }
+        body .cursos .container .programas .carta2 {
+          background-image: url(/media/full-stack.webp);
+          background-size: cover;
+          margin: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 500px;
+          height: 60vh;
+          justify-content: space-evenly;
+          margin-bottom: 80px;
+          padding-bottom: 100px;
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.351); }
+          body .cursos .container .programas .carta2 .boton {
+            margin-top: 100px;
+            min-width: 130px;
+            height: 40px;
+            color: white;
+            padding: 30px 50px;
+            font-size: 2em;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            position: relative;
+            outline: none;
+            border-radius: 50px;
+            border: none;
+            background: blueviolet;
+            box-shadow: 0 3px rgba(255, 255, 255, 0.24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px; }
+        body .cursos .container .programas .carta3 {
+          background-image: url(/media/python.webp);
+          background-size: cover;
+          margin: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 500px;
+          height: 60vh;
+          justify-content: space-evenly;
+          margin-bottom: 80px;
+          padding-bottom: 100px;
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.351); }
+          body .cursos .container .programas .carta3 .boton {
+            margin-top: 100px;
+            min-width: 130px;
+            height: 40px;
+            color: white;
+            padding: 30px 50px;
+            font-size: 2em;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            position: relative;
+            outline: none;
+            border-radius: 50px;
+            border: none;
+            background: blueviolet;
+            box-shadow: 0 3px rgba(255, 255, 255, 0.24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px; }
+
+@media (min-width: 768px) {
+  .cursos {
+    font-size: 1.5em;
+    font-weight: bold; }
+    .cursos .container h2 {
+      color: blueviolet; } }
+
+.nosotros {
+  height: 90vh; }
+  .nosotros section .container {
+    background-image: url(/media/un-equipo.webp);
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .nosotros section .container .texto h2 {
+      color: blueviolet;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      font-size: 4em;
+      justify-content: center;
+      padding: 95px;
+      font-weight: bold;
+      text-shadow: 4px 4px 5px black; }
+    .nosotros section .container .texto p {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 20px 0px 10px;
+      color: blueviolet; }
+
+@media (min-width: 768px) {
+  .nosotros {
+    height: 70vh; }
+    .nosotros section .container {
+      background-size: cover;
+      box-shadow: inset 0px 250px 10px 1000px rgba(255, 255, 255, 0.529);
+      background-color: rgba(255, 255, 255, 0.58); }
+      .nosotros section .container .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .nosotros section .container .texto h2 {
+          color: blueviolet;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          font-size: 4em;
+          justify-content: center;
+          padding: 60px;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black; }
+        .nosotros section .container .texto .parrafo1 {
+          background-color: white;
+          height: 200px;
+          width: 80%;
+          font-size: 2em;
+          font-weight: bold;
+          padding: 20px 0px;
+          color: blueviolet;
+          border-radius: 30px;
+          margin-bottom: 20px; }
+        .nosotros section .container .texto .parrafo2 {
+          background-color: white;
+          height: 200px;
+          width: 80%;
+          font-size: 2em;
+          font-weight: bold;
+          padding: 20px 0px;
+          color: blueviolet;
+          border-radius: 30px; } }
+
+.quienes_somos {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(/media/somos-coderya.webp);
+  background-size: 1200px 900px; }
+  .quienes_somos .texto {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.395);
+    padding: 20px 0px 0px 0px; }
+    .quienes_somos .texto h2 {
+      color: blueviolet;
+      font-weight: bold;
+      text-shadow: 4px 2px 2px black;
+      font-size: 3em;
+      text-align: center;
+      margin: 30px 10px 140px 10px; }
+    .quienes_somos .texto p {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      margin: 10px 20px 10px 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #59139b;
+      border-radius: 40px; }
