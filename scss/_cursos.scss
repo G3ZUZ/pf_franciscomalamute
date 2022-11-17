@@ -58,7 +58,7 @@ body {
                 }
 
                 .carta2 {
-                    background-image: url(../media/full-stack.webp);
+                    background-image: url("../media/full-stack.webp");
                     @include carta;
 
                     .boton {
@@ -69,7 +69,7 @@ body {
                 }
 
                 .carta3 {
-                    background-image: url(../media/python.webp);
+                    background-image: url(./media/python.webp);
                     @include carta;
 
                     .boton {
